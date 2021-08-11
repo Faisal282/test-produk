@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "fcd566ac-084f-42ed-9021-8cf28b40c72b",
+		"name": "TEST FAISAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PRODUK",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/produk/getall",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DETAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/produk/detail/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"detail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSERT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"KodeBrg\": \"SKU0001\",\n    \"NamaBrg\": \"TV DIGITAL\",\n    \"Deskripsi\": \"Hitam\",\n    \"KategoriBrg\": \"1\",\n    \"MerkBrg\": \"LG\",\n    \"HargaBeliBrg\": 3300000,\n    \"StokAkhirBrg\": 1,\n    \"NoBatchBrg\": \"1\",\n    \"ExpBrg\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/produk/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/produk/delete/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Id\": 1,\n    \"KodeBrg\": \"SKU0002\",\n    \"NamaBrg\": \"TV DIGITAL\",\n    \"Deskripsi\": \"Hitam\",\n    \"KategoriBrg\": \"1\",\n    \"MerkBrg\": \"LG\",\n    \"HargaBeliBrg\": 3300000,\n    \"StokAkhirBrg\": 1,\n    \"NoBatchBrg\": \"1\",\n    \"ExpBrg\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/produk/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
