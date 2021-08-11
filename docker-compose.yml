@@ -1,0 +1,29 @@
+version: "3"
+services:
+  # app:
+  #   image: docker.io/bitnami/laravel:7
+  #   container_name: app-test-faisal
+  #   restart: unless-stopped
+  #   tty: true
+  #   environment:
+  #     SERVICE_NAME: app
+  #     SERVICE_TAGS: dev
+  #   ports:
+  #     - 2150:8000
+  #   working_dir: /var/www
+  #   volumes:
+  #     - ./:/app
+
+  db:
+    container_name: "mysql-local"
+    restart: unless-stopped
+    tty: true
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./data:/var/lib/mysql
+    ports: 
+      - 1330:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: wadahsukses
